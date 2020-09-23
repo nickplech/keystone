@@ -30,7 +30,11 @@ export const Cell: CellComponent = ({ item, path, linkTo }) => {
 };
 Cell.supportsLinkTo = true;
 
-export const controller = (config: FieldControllerConfig): FieldController<string, string> => {
+type Config = FieldControllerConfig<{}>;
+
+export const controller = (
+  config: Config
+): FieldController<string, string> => {
   return {
     path: config.path,
     label: config.label,
