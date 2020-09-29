@@ -28,7 +28,7 @@
   - [ ] Add config for `validUserConditions` as an optional set of GraphQL filters; slightly refactor loading of item(s)
   - [ ] Don't error on failure; create types/union type; `UserPasswordAuthSuccess { item token } UserPasswordAuthFailure { code message }`
   - [ ] Refactor the list and field validation into `validateConfig()`
-  - [ ] Hooks:
+  - [ ] Hooks – See notes in HOOKS.md
     - [ ] Review/revise the [existing hooks](https://www.keystonejs.com/api/hooks#authentication-hooks)
     - [ ] Implement hooks for the auth, reset pass and magic link
     - [ ] Support rate limiting use case
